@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Wajir County Students Association | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="home.css">
+   
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
+      <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html" class="nav-link-item active">Home</a></li>
+        <li><a href="about.html" class="nav-link-item">About</a></li>
+        <li><a href="leadership.html" class="nav-link-item">Leadership</a></li>
+        <li><a href="events.html" class="nav-link-item">Events</a></li>
+        <li><a href="gallery.html" class="nav-link-item">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fas fa-graduation-cap"></i> Empowering Future Leaders</span>
+          <h1>Connecting Wajir Students Across Universities & Colleges</h1>
+          <p>Join a thriving community of 500+ students, alumni, and mentors dedicated to academic excellence, leadership, and cultural pride.</p>
+          <div class="btn-group">
+            <a href="#" class="btn-primary"><i class="fas fa-user-plus"></i> Join Community</a>
+            <a href="#" class="btn-outline"><i class="fas fa-info-circle"></i> Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><div class="stat-number">500+</div><div class="stat-label">Active Members</div></div>
+            <div class="stat"><div class="stat-number">12+</div><div class="stat-label">Universities</div></div>
+            <div class="stat"><div class="stat-number">50+</div><div class="stat-label">Events Hosted</div></div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.pexels.com/photos/32668047/pexels-photo-32668047.jpeg" alt="Wajir community" style="width: 100%; border-radius: 32px; box-shadow: 0 25px 30px -12px rgba(0,0,0,0.2);">
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision-core">
+      <div class="container">
+        <div class="mv-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem;">
+          <div class="mv-card"><div class="mv-icon" style="font-size: 2.2rem; color:#e67e22;"><i class="fas fa-bullseye"></i></div><h3 style="margin: 1rem 0 0.5rem;">Our Mission</h3><p>To unite Wajir County students in higher education by fostering academic excellence, leadership development, and cultural pride through mentorship, networking, and strategic partnerships.</p></div>
+          <div class="mv-card"><div class="mv-icon" style="font-size: 2.2rem; color:#e67e22;"><i class="fas fa-eye"></i></div><h3 style="margin: 1rem 0 0.5rem;">Our Vision</h3><p>A generation of empowered, visionary leaders from Wajir County who drive positive change, excel in their fields, and uplift each other through unity and shared purpose.</p></div>
+        </div>
+        
+        <!-- Rotating Core Values -->
+        <div class="core-values-rotating">
+          <div class="rotating-header"><i class="fas fa-gem"></i><span>Our Core Values in Motion</span><i class="fas fa-sync-alt"></i></div>
+          <div class="value-carousel-container">
+            <button class="carousel-btn" id="prevValueBtn"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track"><div class="carousel-slides" id="valueSlides">
+              <div class="value-slide"><i class="fas fa-handshake"></i><span>Unity & Solidarity</span></div>
+              <div class="value-slide"><i class="fas fa-chalkboard"></i><span>Academic Excellence</span></div>
+              <div class="value-slide"><i class="fas fa-leaf"></i><span>Integrity</span></div>
+              <div class="value-slide"><i class="fas fa-users"></i><span>Community Service</span></div>
+              <div class="value-slide"><i class="fas fa-lightbulb"></i><span>Innovation</span></div>
+              <div class="value-slide"><i class="fas fa-globe-africa"></i><span>Cultural Pride</span></div>
+            </div></div>
+            <button class="carousel-btn" id="nextValueBtn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="leadership-section">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title">Our Leadership</h2><p class="section-subtitle">Dedicated student leaders committed to empowering the Wajir community</p></div>
+        <div class="leadership-grid">
+          <div class="leader-card"><div class="leader-img-wrapper"><img class="leader-img" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kevin Kore"></div><div class="leader-info"><h3 class="leader-name">Kevin Kore</h3><span class="leader-role"><i class="fas fa-user-tie"></i> President</span></div></div>
+          <div class="leader-card"><div class="leader-img-wrapper"><img class="leader-img" src="https://images.pexels.com/photos/29995644/pexels-photo-29995644.jpeg" alt="Einstein Kimutai"></div><div class="leader-info"><h3 class="leader-name">Einstein Kimutai</h3><span class="leader-role"><i class="fas fa-user-friends"></i> Vice President</span></div></div>
+          <div class="leader-card"><div class="leader-img-wrapper"><img class="leader-img" src="/WhatsApp Image 2026-05-21 at 21.12.46.jpeg" alt="Sylvia Jeruto"></div><div class="leader-info"><h3 class="leader-name">Adan Jelle</h3><span class="leader-role"><i class="fas fa-envelope"></i> Secretary General</span></div></div>
+          <div class="leader-card"><div class="leader-img-wrapper"><img class="leader-img" src="https://images.pexels.com/photos/34377368/pexels-photo-34377368.jpeg" alt="Marion Kosgei"></div><div class="leader-info"><h3 class="leader-name">Marion Kosgei</h3><span class="leader-role"><i class="fas fa-chart-line"></i> Treasurer</span></div></div>
+        </div>
+        <div class="view-all-link"><a href="#" class="view-all-btn">View All Leaders →</a></div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION - PROFESSIONAL -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title">Memories & Moments</h2><p class="section-subtitle">Capturing the spirit of Wajir County students — events, meetups, and community impact</p></div>
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- 6 professional gallery items with hover overlays -->
+          <div class="gallery-item" data-img="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"><img class="gallery-img" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Leadership workshop"><div class="gallery-overlay"><h4>Leadership Summit 2024</h4><p>Annual leadership workshop & networking</p></div></div>
+          <div class="gallery-item" data-img="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg"><img class="gallery-img" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mentorship session"><div class="gallery-overlay"><h4>Mentorship Connect</h4><p>Students & alumni engagement</p></div></div>
+          <div class="gallery-item" data-img="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg"><img class="gallery-img" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Annual gathering"><div class="gallery-overlay"><h4>Annual Summit Gala</h4><p>Wajir's biggest student gathering</p></div></div>
+          <div class="gallery-item" data-img="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg"><img class="gallery-img" src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Career fair"><div class="gallery-overlay"><h4>Career Accelerator Expo</h4><p>Corporate connections & internships</p></div></div>
+          <div class="gallery-item" data-img="https://images.pexels.com/photos/1080840/pexels-photo-1080840.jpeg"><img class="gallery-img" src="https://images.pexels.com/photos/1080840/pexels-photo-1080840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Community outreach"><div class="gallery-overlay"><h4>Community Outreach</h4><p>Giving back to Wajir County</p></div></div>
+          <div class="gallery-item" data-img="https://images.pexels.com/photos/8413030/pexels-photo-8413030.jpeg"><img class="gallery-img" src="https://images.pexels.com/photos/8413030/pexels-photo-8413030.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cultural day"><div class="gallery-overlay"><h4>Cultural Pride Day</h4><p>Celebrating heritage & diversity</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox"><span class="lightbox-close">&times;</span><img class="lightbox-img" id="lightboxImg" src=""></div>
+
+    <!-- Programs Preview -->
+    <section class="programs-preview">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title">Our Flagship Programs</h2><p class="section-subtitle">Structured initiatives driving real impact and career success</p></div>
+        <div class="programs-grid">
+          <div class="program-card"><div class="program-img-wrapper"><img class="program-img" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600"></div><div class="program-content"><div class="program-icon-small"><i class="fas fa-chalkboard-user"></i></div><h3>Leadership Academy</h3><p class="program-short-desc">Intensive leadership & public speaking</p><p class="program-full-desc">Monthly workshops, executive seminars, leadership simulations.</p><a href="#" class="program-link">Discover Program <i class="fas fa-arrow-right"></i></a></div></div>
+          <div class="program-card"><div class="program-img-wrapper"><img class="program-img" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=600"></div><div class="program-content"><div class="program-icon-small"><i class="fas fa-hand-holding-heart"></i></div><h3>Mentorship Nexus</h3><p class="program-short-desc">1-on-1 guidance from alumni</p><p class="program-full-desc">Personalized mentorship pairing, career coaching, and academic support.</p><a href="#" class="program-link">Discover Program <i class="fas fa-arrow-right"></i></a></div></div>
+          <div class="program-card"><div class="program-img-wrapper"><img class="program-img" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600"></div><div class="program-content"><div class="program-icon-small"><i class="fas fa-calendar-check"></i></div><h3>Annual Summit</h3><p class="program-short-desc">Wajir's largest student gathering</p><p class="program-full-desc">3-day transformative event with keynote speakers, cultural showcases.</p><a href="#" class="program-link">Discover Program <i class="fas fa-arrow-right"></i></a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <style>
+        :root {
+            --footer-bg: #222529;
+            --footer-text: #adb5bd;
+            --footer-heading: #ffffff;
+            --footer-link-hover: #ffffff;
+            --footer-border: #3b3f44;
+        }
+
+        /* Basic body styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        main {
+            flex-grow: 1;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content {
+            padding: 2rem 0;
+            background-color: #ffffff; /* Page content needs a background */
+        }
+        
+        .main-content-wrapper {
+             background-color: #ffffff; /* Set this to your main page background color */
+        }
+
+        /* FOOTER STYLES START HERE */
+        
+        /* The SVG divider itself */
+        .footer-divider {
+            line-height: 0; /* Removes any extra space around the SVG */
+            background-color: #ffffff; /* Match the content background above it */
+        }
+        .footer-divider svg {
+            display: block;
+            width: 100%;
+            height: 80px; /* Adjust height of the wave */
+            fill: var(--footer-bg);
+        }
+
+        .footer-wave {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 2rem 0 3rem 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-top: -1px; /* Overlap slightly to prevent rendering gaps */
+        }
+        
+        .footer-wave__main-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Mobile-first */
+            gap: 2.5rem;
+        }
+
+        .footer-wave__heading {
+            color: var(--footer-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+        }
+        
+        .footer-wave__links ul { margin: 0; padding: 0; list-style: none; }
+        .footer-wave__links li:not(:last-child) { margin-bottom: 0.75rem; }
+        .footer-wave__links a { color: var(--footer-text); text-decoration: none; transition: color 0.2s; }
+        .footer-wave__links a:hover { color: var(--footer-link-hover); }
+
+        .footer-wave__bottom {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--footer-border);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            text-align: center;
+        }
+        .footer-wave__copyright { font-size: 0.875em; }
+
+        @media (min-width: 600px) {
+            .footer-wave__main-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .footer-wave__main-grid {
+                grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            }
+            .footer-wave__bottom {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+      ==================================================================
+      SVG WAVE DIVIDER FOOTER
+      ==================================================================
+    -->
+
+    <!-- This SVG creates the wave shape -->
+    <div class="footer-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 V100 H0 Z"></path>
+        </svg>
+    </div>
+
+    <footer class="footer-wave" role="contentinfo">
+        <div class="container">
+            <div class="footer-wave__main-grid">
+                <div class="footer-wave__about">
+                    <h3 class="footer-wave__heading">About Us</h3>
+                    <p>Empowering the Next Generation of Leaders
+United by heritage, driven by excellence — building a brighter future for Wajir students across Kenya.</p>
+                </div>
+                <div class="footer-wave__links">
+                    <h3 class="footer-wave__heading">Navigate</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wave__links">
+                    <h3 class="footer-wave__heading">Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-wave__links">
+                    <h3 class="footer-wave__heading">Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-wave__bottom">
+                <p class="footer-wave__copyright">&copy; 2025 Your Brand. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+  <script>
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const navLinksEl = document.getElementById('navLinks');
+    if (mobileBtn && navLinksEl) {
+      mobileBtn.addEventListener('click', () => navLinksEl.classList.toggle('active'));
+      document.querySelectorAll('.nav-link-item').forEach(link => link.addEventListener('click', () => navLinksEl.classList.remove('active')));
+    }
+    // Dark mode
+    const darkBtn = document.getElementById('darkModeBtn');
+    if (darkBtn) darkBtn.addEventListener('click', () => { document.body.classList.toggle('dark-mode'); darkBtn.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light' : '<i class="fas fa-moon"></i> Dark'; });
+    
+    // Carousel logic
+    const slidesContainer = document.getElementById('valueSlides');
+    const slidesArr = Array.from(document.querySelectorAll('.value-slide'));
+    const prevBtnVal = document.getElementById('prevValueBtn'), nextBtnVal = document.getElementById('nextValueBtn');
+    let currentIdx = 0, slidesToShow = 3;
+    function updateSlidesToShow() { slidesToShow = window.innerWidth <= 550 ? 1 : window.innerWidth <= 768 ? 2 : 3; updateCarousel(); }
+    function updateCarousel() { if(!slidesContainer) return; const slideW = slidesArr[0]?.offsetWidth + 24; slidesContainer.style.transform = `translateX(-${currentIdx * slideW}px)`; updateDots(); }
+    function updateDots() { const dotsDiv = document.getElementById('carouselDots'); if(!dotsDiv) return; const totalDots = Math.ceil(slidesArr.length / slidesToShow); dotsDiv.innerHTML = ''; for(let i=0;i<totalDots;i++){ const d=document.createElement('div'); d.classList.add('dot'); if(i===Math.floor(currentIdx/slidesToShow)) d.classList.add('active'); d.addEventListener('click',()=>{ currentIdx=i*slidesToShow; if(currentIdx>=slidesArr.length) currentIdx=slidesArr.length-slidesToShow; if(currentIdx<0) currentIdx=0; updateCarousel(); resetAuto(); }); dotsDiv.appendChild(d); } }
+    function nextSlide() { const max=slidesArr.length-slidesToShow; if(currentIdx+slidesToShow<slidesArr.length) currentIdx+=slidesToShow; else currentIdx=0; if(currentIdx>max) currentIdx=max; if(currentIdx<0) currentIdx=0; updateCarousel(); }
+    function prevSlide() { if(currentIdx-slidesToShow>=0) currentIdx-=slidesToShow; else currentIdx=slidesArr.length-slidesToShow; if(currentIdx<0) currentIdx=0; updateCarousel(); }
+    let autoInterval; function resetAuto(){ if(autoInterval) clearInterval(autoInterval); autoInterval=setInterval(()=>nextSlide(),4500); }
+    if(prevBtnVal && nextBtnVal && slidesContainer){ prevBtnVal.addEventListener('click',()=>{ prevSlide(); resetAuto(); }); nextBtnVal.addEventListener('click',()=>{ nextSlide(); resetAuto(); }); window.addEventListener('resize',()=>{ updateSlidesToShow(); resetAuto(); }); updateSlidesToShow(); resetAuto(); }
+    
+    // LIGHTBOX GALLERY
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeLightbox = document.querySelector('.lightbox-close');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        const imgSrc = item.getAttribute('data-img') || item.querySelector('img')?.src;
+        if(imgSrc) { lightboxImg.src = imgSrc; lightbox.classList.add('active'); }
+      });
+    });
+    function closeLightboxFn() { lightbox.classList.remove('active'); }
+    closeLightbox.addEventListener('click', closeLightboxFn);
+    lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightboxFn(); });
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && lightbox.classList.contains('active')) closeLightboxFn(); });
+  </script>
+</body>
+</html>
