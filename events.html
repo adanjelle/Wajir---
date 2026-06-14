@@ -2,192 +2,627 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wajir Students | Events</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="event.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Events | Wajir County Students Association</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="event.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
-      <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="home.html" class="nav-link-item active">Home</a></li>
-        <li><a href="about.html" class="nav-link-item">About</a></li>
-        <li><a href="leadership.html" class="nav-link-item">Leadership</a></li>
-        <li><a href="events.html" class="nav-link-item">Events</a></li>
-        <li><a href="gallery.html" class="nav-link-item">Gallery</a></li>
-        <li><a href="contact.html" class="nav-link-item">Contact</a></li>
-        <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
-      </ul>
-    </div>
-  </nav>
-
- <footer>
-
-    <style>
-        :root {
-            --footer-bg: #222529;
-            --footer-text: #adb5bd;
-            --footer-heading: #ffffff;
-            --footer-link-hover: #ffffff;
-            --footer-border: #3b3f44;
-        }
-
-        /* Basic body styles */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        
-        main {
-            flex-grow: 1;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1140px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .main-content {
-            padding: 2rem 0;
-            background-color: #ffffff; /* Page content needs a background */
-        }
-        
-        .main-content-wrapper {
-             background-color: #ffffff; /* Set this to your main page background color */
-        }
-
-        /* FOOTER STYLES START HERE */
-        
-        /* The SVG divider itself */
-        .footer-divider {
-            line-height: 0; /* Removes any extra space around the SVG */
-            background-color: #ffffff; /* Match the content background above it */
-        }
-        .footer-divider svg {
-            display: block;
-            width: 100%;
-            height: 80px; /* Adjust height of the wave */
-            fill: var(--footer-bg);
-        }
-
-        .footer-wave {
-            background-color: var(--footer-bg);
-            color: var(--footer-text);
-            padding: 2rem 0 3rem 0;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-top: -1px; /* Overlap slightly to prevent rendering gaps */
-        }
-        
-        .footer-wave__main-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Mobile-first */
-            gap: 2.5rem;
-        }
-
-        .footer-wave__heading {
-            color: var(--footer-heading);
-            font-size: 1rem;
-            font-weight: 600;
-            margin: 0 0 1rem 0;
-        }
-        
-        .footer-wave__links ul { margin: 0; padding: 0; list-style: none; }
-        .footer-wave__links li:not(:last-child) { margin-bottom: 0.75rem; }
-        .footer-wave__links a { color: var(--footer-text); text-decoration: none; transition: color 0.2s; }
-        .footer-wave__links a:hover { color: var(--footer-link-hover); }
-
-        .footer-wave__bottom {
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--footer-border);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-            text-align: center;
-        }
-        .footer-wave__copyright { font-size: 0.875em; }
-
-        @media (min-width: 600px) {
-            .footer-wave__main-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .footer-wave__main-grid {
-                grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            }
-            .footer-wave__bottom {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- 
-      ==================================================================
-      SVG WAVE DIVIDER FOOTER
-      ==================================================================
-    -->
-
-    <!-- This SVG creates the wave shape -->
-    <div class="footer-divider" aria-hidden="true">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-            <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 V100 H0 Z"></path>
-        </svg>
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
+    <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" class="nav-link-item">Home</a></li>
+      <li><a href="about.html" class="nav-link-item ">About</a></li>
+      <li><a href="leadership.html" class="nav-link-item">Leadership</a></li>
+      <li><a href="events.html" class="nav-link-item  active">Events</a></li>
+      <li><a href="gallery.html" class="nav-link-item">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+      <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
+    </ul>
+  </div>
+</nav>
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="page-hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-eyebrow"><i class="fas fa-calendar-alt"></i> 2025 Events Calendar</div>
+      <h1>Where Wajir Students <em>Connect</em>, Grow & Lead</h1>
+      <p>From flagship summits to intimate workshops — every WCSA event is designed to move your academic journey, career, and community forward.</p>
+      <div class="hero-cta">
+        <a href="#upcoming" class="cta-primary"><i class="fas fa-ticket-alt"></i> Browse Events</a>
+        <a href="#" class="cta-secondary"><i class="fas fa-bell"></i> Get Notified</a>
+      </div>
     </div>
 
-    <footer class="footer-wave" role="contentinfo">
-        <div class="container">
-            <div class="footer-wave__main-grid">
-                <div class="footer-wave__about">
-                    <h3 class="footer-wave__heading">About Us</h3>
-                    <p>Empowering the Next Generation of Leaders
-United by heritage, driven by excellence — building a brighter future for Wajir students across Kenya.</p>
-                </div>
-                <div class="footer-wave__links">
-                    <h3 class="footer-wave__heading">Navigate</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-wave__links">
-                    <h3 class="footer-wave__heading">Resources</h3>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-                 <div class="footer-wave__links">
-                    <h3 class="footer-wave__heading">Legal</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-wave__bottom">
-                <p class="footer-wave__copyright">&copy; 2025 Your Brand. All Rights Reserved.</p>
-            </div>
+    <!-- Calendar Widget -->
+    <div class="hero-calendar">
+      <div class="cal-header">
+        <h3><i class="fas fa-calendar-check"></i> August 2025</h3>
+        <span>4 events this month</span>
+      </div>
+      <div class="cal-body">
+        <div class="cal-grid">
+          <div class="cal-day-name">Su</div><div class="cal-day-name">Mo</div><div class="cal-day-name">Tu</div><div class="cal-day-name">We</div><div class="cal-day-name">Th</div><div class="cal-day-name">Fr</div><div class="cal-day-name">Sa</div>
+          <!-- Aug 2025: starts Friday -->
+          <div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day">1</div><div class="cal-day">2</div>
+          <div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div><div class="cal-day today">6</div><div class="cal-day">7</div><div class="cal-day">8</div><div class="cal-day">9</div>
+          <div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div><div class="cal-day">13</div><div class="cal-day has-event">14</div><div class="cal-day has-event">15</div><div class="cal-day has-event">16</div>
+          <div class="cal-day">17</div><div class="cal-day">18</div><div class="cal-day">19</div><div class="cal-day">20</div><div class="cal-day">21</div><div class="cal-day has-event">22</div><div class="cal-day">23</div>
+          <div class="cal-day">24</div><div class="cal-day">25</div><div class="cal-day">26</div><div class="cal-day">27</div><div class="cal-day">28</div><div class="cal-day">29</div><div class="cal-day">30</div>
+          <div class="cal-day">31</div>
         </div>
-    </footer>
-  <script src="script.js"></script>
+        <div class="cal-legend">
+          <div class="cal-event-pill">
+            <div class="pill-dot"></div>
+            <div class="pill-text"><strong>Annual Summit 2025</strong><span>Nairobi · 3 Days</span></div>
+            <div class="pill-date">Aug 14</div>
+          </div>
+          <div class="cal-event-pill">
+            <div class="pill-dot" style="background:#7C3AED"></div>
+            <div class="pill-text"><strong>Leadership Bootcamp</strong><span>Mombasa · Full Day</span></div>
+            <div class="pill-date">Aug 22</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FILTER BAR
+══════════════════════════════ -->
+<div class="filter-bar" id="upcoming">
+  <div class="container filter-inner">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-cat="all">All Events</button>
+      <button class="filter-tab" data-cat="flagship">Flagship</button>
+      <button class="filter-tab" data-cat="workshop">Workshops</button>
+      <button class="filter-tab" data-cat="career">Career</button>
+      <button class="filter-tab" data-cat="cultural">Cultural</button>
+      <button class="filter-tab" data-cat="community">Community</button>
+    </div>
+    <div class="filter-right">
+      <span class="filter-count"><strong id="eventCount">6</strong> events found</span>
+      <div class="view-toggle">
+        <button class="view-btn active" id="gridViewBtn" title="Grid view"><i class="fas fa-th-large"></i></button>
+        <button class="view-btn" id="listViewBtn" title="List view"><i class="fas fa-list"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     FEATURED EVENT
+══════════════════════════════ -->
+<section class="featured-section">
+  <div class="container">
+    <div class="featured-card">
+      <div class="featured-img-wrap">
+        <img class="featured-img" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Annual Summit">
+        <div class="featured-badge"><i class="fas fa-star"></i> Featured Event</div>
+        <div class="featured-countdown">
+          <div class="cal-day-name" style="color:rgba(255,255,255,.5);font-size:.6rem;grid-column:1/-1;text-align:left;padding:0 0 4px;">STARTS IN</div>
+          <div class="cd-item"><div class="cd-num" id="cd-days">08</div><div class="cd-lbl">Days</div></div>
+          <div class="cd-item"><div class="cd-num" id="cd-hrs">14</div><div class="cd-lbl">Hours</div></div>
+          <div class="cd-item"><div class="cd-num" id="cd-min">32</div><div class="cd-lbl">Mins</div></div>
+          <div class="cd-item"><div class="cd-num" id="cd-sec">00</div><div class="cd-lbl">Secs</div></div>
+        </div>
+      </div>
+      <div class="featured-body">
+        <div class="featured-eyebrow"><i class="fas fa-trophy"></i> WCSA Flagship · Annual</div>
+        <h2>WCSA Annual Summit 2025</h2>
+        <p>The biggest event in the WCSA calendar — three transformative days of keynote addresses, career workshops, cultural showcases, and deep networking with alumni and industry leaders from across Kenya.</p>
+        <div class="featured-meta">
+          <div class="feat-meta-row"><i class="fas fa-calendar"></i> 14 – 16 August 2025 · 3 Days</div>
+          <div class="feat-meta-row"><i class="fas fa-map-marker-alt"></i> Kenyatta International Convention Centre, Nairobi</div>
+          <div class="feat-meta-row"><i class="fas fa-users"></i> 300 seats · <span style="color:#DC2626;font-weight:600;">Only 60 remaining</span></div>
+          <div class="feat-meta-row"><i class="fas fa-tag"></i> KES 1,500 members · KES 2,500 non-members</div>
+        </div>
+        <div class="featured-actions">
+          <a href="#" class="btn-amber"><i class="fas fa-ticket-alt"></i> Register Now</a>
+          <a href="#" class="btn-outline"><i class="fas fa-info-circle"></i> Full Details</a>
+        </div>
+        <div class="feat-rsvp-info">
+          <img class="feat-avatar" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=60" alt="">
+          <img class="feat-avatar" src="https://images.pexels.com/photos/29995644/pexels-photo-29995644.jpeg?auto=compress&cs=tinysrgb&w=60" alt="">
+          <img class="feat-avatar" src="https://images.pexels.com/photos/34377368/pexels-photo-34377368.jpeg?auto=compress&cs=tinysrgb&w=60" alt="">
+          <img class="feat-avatar" src="https://images.pexels.com/photos/3776932/pexels-photo-3776932.jpeg?auto=compress&cs=tinysrgb&w=60" alt="">
+          <span><strong>240+</strong> members already registered</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     EVENTS GRID
+══════════════════════════════ -->
+<section class="events-section">
+  <div class="container">
+    <div class="events-grid" id="eventsGrid">
+
+      <!-- Card 1 -->
+      <div class="event-card" data-cat="workshop" data-reveal>
+        <div class="event-img-wrap">
+          <img class="event-img" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bootcamp">
+          <div class="event-cat-badge cat-workshop">Workshop</div>
+          <button class="event-save-btn" title="Save event"><i class="far fa-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <div class="event-date-row">
+            <div class="event-date-chip"><i class="fas fa-calendar"></i> 22 August 2025</div>
+            <div class="event-spots">80 seats</div>
+          </div>
+          <div class="event-title">Leadership & Public Speaking Bootcamp</div>
+          <div class="event-desc">An intensive full-day workshop on executive communication, debate technique, and storytelling led by alumni from Kenya's top government and corporate institutions.</div>
+          <div class="event-meta-list">
+            <div class="event-meta-row"><i class="fas fa-map-marker-alt"></i> Mombasa, Kenya</div>
+            <div class="event-meta-row"><i class="fas fa-clock"></i> 8:00 AM – 6:00 PM</div>
+            <div class="event-meta-row"><i class="fas fa-user-tie"></i> Facilitator: Kevin Kore, WCSA President</div>
+          </div>
+          <div class="event-footer">
+            <div class="event-price">KES <span>800</span></div>
+            <button class="event-register-btn"><i class="fas fa-arrow-right"></i> Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="event-card" data-cat="career" data-reveal>
+        <div class="event-img-wrap">
+          <img class="event-img" src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Career Expo">
+          <div class="event-cat-badge cat-career">Career</div>
+          <button class="event-save-btn"><i class="far fa-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <div class="event-date-row">
+            <div class="event-date-chip"><i class="fas fa-calendar"></i> 5 September 2025</div>
+            <div class="event-spots low">32 seats left</div>
+          </div>
+          <div class="event-title">Career Accelerator Expo 2025</div>
+          <div class="event-desc">Meet top employers and graduate recruiters from Kenya's leading companies. Bring your CV — get on-the-spot feedback from HR professionals and alumni hiring managers.</div>
+          <div class="event-meta-list">
+            <div class="event-meta-row"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+            <div class="event-meta-row"><i class="fas fa-clock"></i> 9:00 AM – 5:00 PM</div>
+            <div class="event-meta-row"><i class="fas fa-building"></i> 15+ companies attending</div>
+          </div>
+          <div class="event-footer">
+            <div class="event-price">KES <span>500</span></div>
+            <button class="event-register-btn"><i class="fas fa-arrow-right"></i> Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="event-card" data-cat="cultural" data-reveal>
+        <div class="event-img-wrap">
+          <img class="event-img" src="https://images.pexels.com/photos/1080840/pexels-photo-1080840.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cultural Day">
+          <div class="event-cat-badge cat-cultural">Cultural</div>
+          <button class="event-save-btn"><i class="far fa-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <div class="event-date-row">
+            <div class="event-date-chip"><i class="fas fa-calendar"></i> 18 October 2025</div>
+            <div class="event-spots">Open entry</div>
+          </div>
+          <div class="event-title">Wajir Cultural Pride Day 2025</div>
+          <div class="event-desc">Celebrating the heritage, diversity, and identity of Wajir County. Join us for cultural performances, traditional food, art exhibitions, and storytelling from our shared history.</div>
+          <div class="event-meta-list">
+            <div class="event-meta-row"><i class="fas fa-map-marker-alt"></i> Kisumu, Kenya</div>
+            <div class="event-meta-row"><i class="fas fa-clock"></i> 10:00 AM – 8:00 PM</div>
+            <div class="event-meta-row"><i class="fas fa-music"></i> Live performances & food stalls</div>
+          </div>
+          <div class="event-footer">
+            <div class="event-price"><span>Free</span> entry</div>
+            <button class="event-register-btn"><i class="fas fa-arrow-right"></i> RSVP</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="event-card" data-cat="workshop" data-reveal>
+        <div class="event-img-wrap">
+          <img class="event-img" src="https://images.pexels.com/photos/8413030/pexels-photo-8413030.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Mentorship">
+          <div class="event-cat-badge cat-workshop">Workshop</div>
+          <button class="event-save-btn"><i class="far fa-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <div class="event-date-row">
+            <div class="event-date-chip"><i class="fas fa-calendar"></i> 8 November 2025</div>
+            <div class="event-spots">60 seats</div>
+          </div>
+          <div class="event-title">Mentorship Nexus — Alumni Match Day</div>
+          <div class="event-desc">WCSA's flagship mentorship matching event. Spend the day meeting alumni mentors in your field and leave paired with someone who will invest in your growth over the next year.</div>
+          <div class="event-meta-list">
+            <div class="event-meta-row"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+            <div class="event-meta-row"><i class="fas fa-clock"></i> 9:00 AM – 4:00 PM</div>
+            <div class="event-meta-row"><i class="fas fa-handshake"></i> 30+ alumni mentors confirmed</div>
+          </div>
+          <div class="event-footer">
+            <div class="event-price"><span>Free</span> for members</div>
+            <button class="event-register-btn"><i class="fas fa-arrow-right"></i> Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="event-card" data-cat="community" data-reveal>
+        <div class="event-img-wrap">
+          <img class="event-img" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Outreach">
+          <div class="event-cat-badge cat-community">Community</div>
+          <button class="event-save-btn"><i class="far fa-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <div class="event-date-row">
+            <div class="event-date-chip"><i class="fas fa-calendar"></i> 29 November 2025</div>
+            <div class="event-spots">Open entry</div>
+          </div>
+          <div class="event-title">Wajir Community Outreach & Give-Back Day</div>
+          <div class="event-desc">Volunteer with fellow WCSA members on community development projects in Wajir County — school supply drives, tree planting, and community clean-up initiatives.</div>
+          <div class="event-meta-list">
+            <div class="event-meta-row"><i class="fas fa-map-marker-alt"></i> Wajir County</div>
+            <div class="event-meta-row"><i class="fas fa-clock"></i> 7:00 AM – 3:00 PM</div>
+            <div class="event-meta-row"><i class="fas fa-leaf"></i> Transport provided from Nairobi</div>
+          </div>
+          <div class="event-footer">
+            <div class="event-price"><span>Free</span> to attend</div>
+            <button class="event-register-btn"><i class="fas fa-arrow-right"></i> Join Us</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="event-card" data-cat="career" data-reveal>
+        <div class="event-img-wrap">
+          <img class="event-img" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=700" alt="End of Year">
+          <div class="event-cat-badge cat-social">Social</div>
+          <button class="event-save-btn"><i class="far fa-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <div class="event-date-row">
+            <div class="event-date-chip"><i class="fas fa-calendar"></i> 13 December 2025</div>
+            <div class="event-spots">120 seats</div>
+          </div>
+          <div class="event-title">WCSA End-of-Year Gala & Awards Night</div>
+          <div class="event-desc">Close out 2025 in style. Celebrate the year's achievements, honour outstanding WCSA members, and network with alumni at our annual black-tie gala dinner and awards ceremony.</div>
+          <div class="event-meta-list">
+            <div class="event-meta-row"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+            <div class="event-meta-row"><i class="fas fa-clock"></i> 6:00 PM – 11:00 PM</div>
+            <div class="event-meta-row"><i class="fas fa-award"></i> Annual WCSA Awards Ceremony</div>
+          </div>
+          <div class="event-footer">
+            <div class="event-price">KES <span>2,000</span></div>
+            <button class="event-register-btn"><i class="fas fa-arrow-right"></i> Book Seat</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PAST EVENTS TIMELINE
+══════════════════════════════ -->
+<section class="past-section">
+  <div class="container">
+    <div class="sec-eyebrow">History</div>
+    <h2 class="sec-title">Our Journey So Far</h2>
+    <p class="sec-sub">Every event we've hosted has shaped the community we are today. Here's a look back at WCSA milestones since founding.</p>
+
+    <div class="timeline">
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <img class="tl-img" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Founding">
+          <div class="tl-year">March 2023</div>
+          <h3>WCSA Founding Assembly</h3>
+          <p>Over 80 students gathered in Nairobi to formally establish the Wajir County Students Association, elect founding leadership, and adopt the organisation's first constitution.</p>
+          <div class="tl-stats">
+            <span class="tl-stat"><i class="fas fa-users"></i> 80 attendees</span>
+            <span class="tl-stat"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <img class="tl-img" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=600" alt="First Summit">
+          <div class="tl-year">August 2023</div>
+          <h3>Inaugural Annual Summit</h3>
+          <p>WCSA's first Annual Summit brought together 150 students and 20 alumni for two days of workshops, career panels, and cultural performances. A milestone for the young organisation.</p>
+          <div class="tl-stats">
+            <span class="tl-stat"><i class="fas fa-users"></i> 170 attendees</span>
+            <span class="tl-stat"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <img class="tl-img" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mentorship Launch">
+          <div class="tl-year">January 2024</div>
+          <h3>Mentorship Nexus Launch</h3>
+          <p>The first cohort of 40 student-alumni mentorship pairs were matched and celebrated at a launch event in Nairobi. The programme has since grown to 120+ pairings.</p>
+          <div class="tl-stats">
+            <span class="tl-stat"><i class="fas fa-handshake"></i> 40 pairs</span>
+            <span class="tl-stat"><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <img class="tl-img" src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Summit 2024">
+          <div class="tl-year">August 2024</div>
+          <h3>Annual Summit 2024 — Record Attendance</h3>
+          <p>250 members attended the second Annual Summit — the largest WCSA gathering to date. Keynote speakers included alumni from government, tech, and law who spoke on career building in Kenya.</p>
+          <div class="tl-stats">
+            <span class="tl-stat"><i class="fas fa-users"></i> 250 attendees</span>
+            <span class="tl-stat"><i class="fas fa-microphone"></i> 8 keynotes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SUBSCRIBE
+══════════════════════════════ -->
+<section class="subscribe-section">
+  <div class="container subscribe-inner">
+    <h2>Never Miss a WCSA Event</h2>
+    <p>Get event announcements, early-bird registration links, and exclusive access to WCSA content directly in your inbox.</p>
+    <div class="subscribe-form">
+      <input type="email" placeholder="Your email address">
+      <button type="button"><i class="fas fa-paper-plane"></i> Subscribe</button>
+    </div>
+    <div class="subscribe-note">No spam. Just events, opportunities, and community updates. Unsubscribe any time.</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PARTNERS
+══════════════════════════════ -->
+<section class="partners-section">
+  <div class="container partners-inner">
+    <div class="partners-label">Event Partners & Sponsors</div>
+    <div class="partners-grid">
+      <div class="partner-tile"><div class="partner-icon"><i class="fas fa-university"></i></div><div class="partner-name">University of Nairobi</div></div>
+      <div class="partner-tile"><div class="partner-icon"><i class="fas fa-briefcase"></i></div><div class="partner-name">Safaricom PLC</div></div>
+      <div class="partner-tile"><div class="partner-icon"><i class="fas fa-balance-scale"></i></div><div class="partner-name">Bowmans Law</div></div>
+      <div class="partner-tile"><div class="partner-icon"><i class="fas fa-laptop-code"></i></div><div class="partner-name">Andela Kenya</div></div>
+      <div class="partner-tile"><div class="partner-icon"><i class="fas fa-landmark"></i></div><div class="partner-name">Wajir County Govt</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FAQ
+══════════════════════════════ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="sec-eyebrow">FAQs</div>
+    <h2 class="sec-title">Event Questions Answered</h2>
+    <p class="sec-sub">Everything you need to know before registering for a WCSA event.</p>
+    <div class="faq-grid">
+      <div class="faq-col">
+        <div class="faq-item">
+          <div class="faq-q">Do I need to be a WCSA member to attend?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><p>Most WCSA events are open to all Wajir County students, but members get priority registration, discounted fees, and exclusive access to some workshops. Joining is free.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I register for an event?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><p>Click "Register" on any event card to fill out the registration form. You'll receive a confirmation email with event details and payment instructions where applicable.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Are event fees refundable?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><p>Paid event registrations are refundable up to 7 days before the event date. Contact events@wcsa.co.ke with your registration details to request a refund.</p></div>
+        </div>
+      </div>
+      <div class="faq-col">
+        <div class="faq-item">
+          <div class="faq-q">Will events be recorded or streamed?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><p>Selected events — especially keynote sessions — are recorded and shared in the WCSA members' portal within two weeks of the event. Workshops are not typically recorded to encourage participation.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I volunteer at WCSA events?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><p>Yes! WCSA events are largely volunteer-run. Members can apply to join event crews through the Events Committee. Volunteers receive free entry and recognition at the event.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How can my organisation sponsor a WCSA event?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><p>We welcome sponsorship from organisations aligned with student development. Reach out via partnerships@wcsa.co.ke for our sponsorship prospectus and available packages.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     JOIN CTA
+══════════════════════════════ -->
+<section class="join-section">
+  <div class="container">
+    <div class="join-inner">
+      <div class="join-text">
+        <h2>Be the First to Hear About New Events</h2>
+        <p>WCSA members get early-bird access, discounted tickets, and exclusive invites to closed workshops and networking sessions. Membership is free — always.</p>
+      </div>
+      <div class="join-actions">
+        <a href="#" class="join-btn-primary"><i class="fas fa-user-plus"></i> Join WCSA Free</a>
+        <a href="contact.html" class="join-btn-sec"><i class="fas fa-envelope"></i> Contact Events Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-badge">W</div>
+        <p>Empowering the next generation of leaders from Wajir County. United by heritage, driven by excellence.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About WCSA</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Events</h4>
+        <ul>
+          <li><a href="#">Annual Summit</a></li>
+          <li><a href="#">Leadership Bootcamp</a></li>
+          <li><a href="#">Career Expo</a></li>
+          <li><a href="#">Cultural Pride Day</a></li>
+          <li><a href="#">End-of-Year Gala</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Join WCSA</a></li>
+          <li><a href="#">Sponsor an Event</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Wajir County Students Association. All rights reserved.</span>
+      <span>Made with <span style="color:var(--amber)">♥</span> for Wajir students across Kenya</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+  /* ── Theme ── */
+  const themeBtn = document.getElementById('themeBtn');
+  const themeIcon = document.getElementById('themeIcon');
+  let dark = false;
+  themeBtn.addEventListener('click', () => {
+    dark = !dark;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : '');
+    themeIcon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+  });
+
+  /* ── Mobile menu ── */
+  const ham = document.getElementById('hamburger');
+  const drawer = document.getElementById('drawer');
+  const overlay = document.getElementById('overlay');
+  ham.addEventListener('click', () => { ham.classList.toggle('open'); drawer.classList.toggle('open'); overlay.classList.toggle('open'); });
+  overlay.addEventListener('click', () => { ham.classList.remove('open'); drawer.classList.remove('open'); overlay.classList.remove('open'); });
+
+  /* ── Scroll to top ── */
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => scrollTopBtn.classList.toggle('visible', window.scrollY > 400));
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+  /* ── Filter tabs ── */
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const eventCards = document.querySelectorAll('.event-card');
+  const eventCountEl = document.getElementById('eventCount');
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.dataset.cat;
+      let visible = 0;
+      eventCards.forEach(card => {
+        const match = cat === 'all' || card.dataset.cat === cat;
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      eventCountEl.textContent = visible;
+    });
+  });
+
+  /* ── View toggle ── */
+  const gridBtn = document.getElementById('gridViewBtn');
+  const listBtn = document.getElementById('listViewBtn');
+  const grid = document.getElementById('eventsGrid');
+  gridBtn.addEventListener('click', () => { grid.classList.remove('list-view'); gridBtn.classList.add('active'); listBtn.classList.remove('active'); });
+  listBtn.addEventListener('click', () => { grid.classList.add('list-view'); listBtn.classList.add('active'); gridBtn.classList.remove('active'); });
+
+  /* ── Save / bookmark toggle ── */
+  document.querySelectorAll('.event-save-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      btn.classList.toggle('saved');
+      const icon = btn.querySelector('i');
+      icon.className = btn.classList.contains('saved') ? 'fas fa-bookmark' : 'far fa-bookmark';
+    });
+  });
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  /* ── Live countdown ── */
+  const targetDate = new Date('2025-08-14T08:00:00');
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+    if (diff <= 0) return;
+    const days = Math.floor(diff / 86400000);
+    const hrs  = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    const secs = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+    document.getElementById('cd-hrs').textContent  = String(hrs).padStart(2,'0');
+    document.getElementById('cd-min').textContent  = String(mins).padStart(2,'0');
+    document.getElementById('cd-sec').textContent  = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  /* ── Scroll reveal ── */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold:0.08 });
+  document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(26px)';
+    el.style.transition = `opacity .5s ease ${(i % 3) * 90}ms, transform .5s ease ${(i % 3) * 90}ms`;
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>

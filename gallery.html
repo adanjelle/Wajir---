@@ -1,31 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wajir Students | Events</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="gallary.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — WCSA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gallary.css">
+
 </head>
 <body>
-<nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
-      <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="home.html" class="nav-link-item active">Home</a></li>
-        <li><a href="about.html" class="nav-link-item">About</a></li>
-        <li><a href="leadership.html" class="nav-link-item">Leadership</a></li>
-        <li><a href="events.html" class="nav-link-item">Events</a></li>
-        <li><a href="gallery.html" class="nav-link-item">Gallery</a></li>
-        <li><a href="contact.html" class="nav-link-item">Contact</a></li>
-        <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
-      </ul>
-    </div>
-  </nav>
 
-  
-  <script src="script.js"></script>
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
+    <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" class="nav-link-item ">Home</a></li>
+      <li><a href="about.html" class="nav-link-item">About</a></li>
+      <li><a href="leadership.html" class="nav-link-item ">Leadership</a></li>
+      <li><a href="events.html" class="nav-link-item">Events</a></li>
+      <li><a href="gallery.html" class="nav-link-item active">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+      <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-left">
+    <div class="hero-eyebrow">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16M4 10h16M4 14h8"/><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+      WCSA Photo Gallery
+    </div>
+    <h1>Where Every<br><em>Moment</em> Lives</h1>
+    <p class="page-hero-desc">From flagship summits to community drives — every photo here is a chapter in the story of Wajir students coming together to connect, grow, and lead.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download All
+      </button>
+      <button class="btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 11.5 19.79 19.79 0 0 1 1.07 2.82 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15z"/></svg>
+        Submit a Photo
+      </button>
+    </div>
+  </div>
+  <div class="hero-stats-card">
+    <div class="stat-item">
+      <span class="stat-num">340+</span>
+      <span class="stat-label">Photos</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">48</span>
+      <span class="stat-label">Events</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">12</span>
+      <span class="stat-label">Albums</span>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-wrap">
+  <div class="filter-bar" id="filterBar">
+    <button class="f-tab active" data-cat="all">All Photos</button>
+    <button class="f-tab" data-cat="events">Events</button>
+    <button class="f-tab" data-cat="graduation">Graduation</button>
+    <button class="f-tab" data-cat="community">Community</button>
+    <button class="f-tab" data-cat="leadership">Leadership</button>
+    <button class="f-tab" data-cat="sports">Sports</button>
+  </div>
+</div>
+
+<!-- GALLERY BODY -->
+<div class="gallery-body">
+
+  <!-- FEATURED STRIP -->
+  <div class="sec-divider">
+    <span class="sec-divider-label">Featured</span>
+    <div class="sec-divider-line"></div>
+  </div>
+
+  <div class="featured-strip">
+    <div class="feat-main g-item" data-cat="graduation"
+      data-title="Annual Graduation Ceremony 2024" data-tag="Graduation"
+      data-src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1000&q=80" alt="Graduation Ceremony 2024" loading="lazy">
+      <div class="feat-caption">
+        <p class="feat-tag">Graduation</p>
+        <h3 class="feat-title">Annual Graduation Ceremony 2024</h3>
+      </div>
+    </div>
+
+    <div class="feat-sm g-item" data-cat="leadership"
+      data-title="Leadership Summit — Nairobi" data-tag="Leadership"
+      data-src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80" alt="Leadership Summit" loading="lazy">
+      <div class="feat-caption">
+        <p class="feat-tag">Leadership</p>
+        <h3 class="feat-title">Leadership Summit — Nairobi</h3>
+      </div>
+    </div>
+
+    <div class="feat-sm g-item" data-cat="community"
+      data-title="Community Outreach, Wajir Town" data-tag="Community"
+      data-src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=700&q=80" alt="Community Outreach" loading="lazy">
+      <div class="feat-caption">
+        <p class="feat-tag">Community</p>
+        <h3 class="feat-title">Community Outreach, Wajir Town</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASONRY GRID -->
+  <div class="sec-divider">
+    <span class="sec-divider-label">All Photos</span>
+    <div class="sec-divider-line"></div>
+    <span class="sec-divider-count" id="photoCount">12 photos</span>
+  </div>
+
+  <div class="masonry" id="masonryGrid">
+
+    <div class="m-item g-item" data-cat="events"
+      data-title="Annual General Meeting 2024" data-tag="Events"
+      data-src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=550&q=75" alt="AGM 2024" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Events</p><p class="m-title">Annual General Meeting 2024</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="sports"
+      data-title="Inter-University Football Final" data-tag="Sports"
+      data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=550&q=75" alt="Football Final" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Sports</p><p class="m-title">Inter-University Football Final</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="community"
+      data-title="Back-to-School Drive 2023" data-tag="Community"
+      data-src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=550&q=75" alt="School Drive" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Community</p><p class="m-title">Back-to-School Drive 2023</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="graduation"
+      data-title="KU Wajir Students — Class of 2024" data-tag="Graduation"
+      data-src="https://images.unsplash.com/photo-1627556704302-624286467c65?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1627556704302-624286467c65?w=550&q=75" alt="KU Graduation" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Graduation</p><p class="m-title">KU Wajir Students — Class of 2024</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="leadership"
+      data-title="Executive Inauguration Ceremony" data-tag="Leadership"
+      data-src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=550&q=75" alt="Inauguration" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Leadership</p><p class="m-title">Executive Inauguration Ceremony</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="events"
+      data-title="Academic Excellence Awards Night" data-tag="Events"
+      data-src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?w=550&q=75" alt="Awards Night" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Events</p><p class="m-title">Academic Excellence Awards Night</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="sports"
+      data-title="Volleyball Championship, Mombasa" data-tag="Sports"
+      data-src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=550&q=75" alt="Volleyball" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Sports</p><p class="m-title">Volleyball Championship, Mombasa</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="community"
+      data-title="Tree Planting — Wajir Forest Reserve" data-tag="Community"
+      data-src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=550&q=75" alt="Tree Planting" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Community</p><p class="m-title">Tree Planting — Wajir Forest Reserve</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="graduation"
+      data-title="UoN Wajir Graduates, Class of 2023" data-tag="Graduation"
+      data-src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=550&q=75" alt="UoN Graduates" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Graduation</p><p class="m-title">UoN Wajir Graduates, Class of 2023</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="leadership"
+      data-title="Mentorship Forum — Guest Speakers" data-tag="Leadership"
+      data-src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=550&q=75" alt="Mentorship Forum" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Leadership</p><p class="m-title">Mentorship Forum — Guest Speakers</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="events"
+      data-title="Cultural Day Celebration" data-tag="Events"
+      data-src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=550&q=75" alt="Cultural Day" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Events</p><p class="m-title">Cultural Day Celebration</p></div></div>
+    </div>
+
+    <div class="m-item g-item" data-cat="community"
+      data-title="Health Camp — Wajir County Hospital" data-tag="Community"
+      data-src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80">
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=550&q=75" alt="Health Camp" loading="lazy">
+      <div class="m-overlay"><div class="m-overlay-inner"><p class="m-tag">Community</p><p class="m-title">Health Camp — Wajir County Hospital</p></div></div>
+    </div>
+
+  </div>
+
+  <div class="load-more-wrap">
+    <button class="btn-secondary">Load more photos</button>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lb-inner">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-nav-btn lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-nav-btn lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+    <div class="lb-bar">
+      <div class="lb-info">
+        <p class="lb-etag" id="lbTag"></p>
+        <p class="lb-etitle" id="lbTitle"></p>
+      </div>
+      <span class="lb-counter" id="lbCounter"></span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>WCSA</strong> — Wajir College &amp; Students Association &nbsp;·&nbsp; Est. 2023<br>
+  <a href="#">Home</a> &nbsp;·&nbsp;
+  <a href="#">About</a> &nbsp;·&nbsp;
+  <a href="#">Events</a> &nbsp;·&nbsp;
+  <a href="#">Gallery</a> &nbsp;·&nbsp;
+  <a href="#">Contact</a><br><br>
+  &copy; 2025 WCSA. All rights reserved.
+</footer>
+
+<script>
+  const allItems = Array.from(document.querySelectorAll('.g-item'));
+  let visible = [...allItems];
+  let cur = 0;
+
+  // Filter
+  document.getElementById('filterBar').addEventListener('click', e => {
+    const tab = e.target.closest('.f-tab');
+    if (!tab) return;
+    document.querySelectorAll('.f-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const cat = tab.dataset.cat;
+    allItems.forEach(i => {
+      i.classList.toggle('hidden', cat !== 'all' && i.dataset.cat !== cat);
+    });
+    visible = allItems.filter(i => !i.classList.contains('hidden'));
+    const label = cat === 'all' ? `${visible.length} photos` : `${visible.length} photo${visible.length !== 1 ? 's' : ''}`;
+    const countEl = document.getElementById('photoCount');
+    if (countEl) countEl.textContent = label;
+  });
+
+  // Lightbox
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbTag = document.getElementById('lbTag');
+  const lbTitle = document.getElementById('lbTitle');
+  const lbCounter = document.getElementById('lbCounter');
+
+  function openLb(item) {
+    cur = visible.indexOf(item);
+    showLb(cur);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function showLb(i) {
+    const item = visible[i];
+    if (!item) return;
+    lbImg.src = item.dataset.src || item.querySelector('img').src;
+    lbImg.alt = item.dataset.title || '';
+    lbTag.textContent = item.dataset.tag || '';
+    lbTitle.textContent = item.dataset.title || '';
+    lbCounter.textContent = `${i + 1} / ${visible.length}`;
+  }
+  function closeLb() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  allItems.forEach(item => item.addEventListener('click', () => openLb(item)));
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', () => { cur = (cur - 1 + visible.length) % visible.length; showLb(cur); });
+  document.getElementById('lbNext').addEventListener('click', () => { cur = (cur + 1) % visible.length; showLb(cur); });
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
+    if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
+  });
+</script>
 </body>
 </html>

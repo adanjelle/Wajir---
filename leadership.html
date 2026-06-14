@@ -2,29 +2,729 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wajir Students | Leadership</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Leadership | Wajir County Students Association</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="leadership.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
-      <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="home.html" class="nav-link-item active">Home</a></li>
-        <li><a href="about.html" class="nav-link-item">About</a></li>
-        <li><a href="leadership.html" class="nav-link-item">Leadership</a></li>
-        <li><a href="events.html" class="nav-link-item">Events</a></li>
-        <li><a href="gallery.html" class="nav-link-item">Gallery</a></li>
-        <li><a href="contact.html" class="nav-link-item">Contact</a></li>
-        <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
-      </ul>
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
+    <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" class="nav-link-item">Home</a></li>
+      <li><a href="about.html" class="nav-link-item ">About</a></li>
+      <li><a href="leadership.html" class="nav-link-item  active">Leadership</a></li>
+      <li><a href="events.html" class="nav-link-item">Events</a></li>
+      <li><a href="gallery.html" class="nav-link-item">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+      <li><button class="dark-toggle" id="darkModeBtn"><i class="fas fa-moon"></i> Dark</button></li>
+    </ul>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="page-hero-text">
+      <div class="eyebrow"><i class="fas fa-users-cog"></i> 2023–2025 Term</div>
+      <h1>The People <em>Leading</em> Our Community Forward</h1>
+      <p>WCSA's leadership is entirely student-driven — elected by members, accountable to members, and dedicated to creating opportunities for every Wajir County student in higher education.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="hero-meta-num">18</div>
+          <div class="hero-meta-lbl">Officials</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-num">6</div>
+          <div class="hero-meta-lbl">Committees</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-num">12+</div>
+          <div class="hero-meta-lbl">Universities</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-num">2 yr</div>
+          <div class="hero-meta-lbl">Term Length</div>
+        </div>
+      </div>
     </div>
-  </nav>
 
-  <script src="script.js"></script>
+    <!-- Org Chart Visual -->
+    <div class="hero-org">
+      <div class="org-title">Organisational Structure</div>
+      <!-- President -->
+      <div class="org-row">
+        <div class="org-chip">
+          <div class="chip-icon"><i class="fas fa-user-tie"></i></div>
+          President
+        </div>
+      </div>
+      <div class="org-line"></div>
+      <!-- VP + SG -->
+      <div class="org-row org-mid-row">
+        <div class="org-chip">
+          <div class="chip-icon"><i class="fas fa-user-friends"></i></div>
+          Vice President
+        </div>
+        <div class="org-chip">
+          <div class="chip-icon"><i class="fas fa-envelope"></i></div>
+          Secretary General
+        </div>
+      </div>
+      <div class="org-line"></div>
+      <!-- Treasurer + Committees -->
+      <div class="org-row org-mid-row">
+        <div class="org-chip">
+          <div class="chip-icon"><i class="fas fa-chart-line"></i></div>
+          Treasurer
+        </div>
+        <div class="org-chip">
+          <div class="chip-icon"><i class="fas fa-sitemap"></i></div>
+          6 Committees
+        </div>
+      </div>
+      <div class="org-line"></div>
+      <!-- General Members -->
+      <div class="org-row">
+        <div class="org-chip" style="background:rgba(224,123,39,.08); border-color:var(--amber);">
+          <div class="chip-icon"><i class="fas fa-users"></i></div>
+          <span style="color:var(--amber);">500+ General Members</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     EXECUTIVE BOARD
+════════════════════════════════════════ -->
+<section class="executive-section">
+  <div class="container">
+    <div class="sec-eyebrow">Executive Board</div>
+    <h2 class="sec-title">The Executive Leadership</h2>
+    <p class="sec-sub">Four directly elected officials who oversee the strategic direction, finances, and daily operations of the association.</p>
+
+    <div class="exec-grid">
+
+      <!-- President -->
+      <div class="exec-card" data-reveal>
+        <div class="exec-rank-stripe"></div>
+        <div class="exec-photo-wrap">
+          <img class="exec-photo" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kevin Kore">
+          <div class="exec-overlay">
+            <p class="overlay-bio">Kevin is a 4th-year Law student at the University of Nairobi with a passion for advocacy and student welfare. He has led two successful scholarship drives since taking office.</p>
+            <div class="overlay-socials">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="exec-body">
+          <div class="exec-name">Kevin Kore</div>
+          <div class="exec-role"><i class="fas fa-user-tie"></i> President</div>
+          <div class="exec-dept"><i class="fas fa-university"></i> University of Nairobi · LLB Year 4</div>
+        </div>
+      </div>
+
+      <!-- Vice President -->
+      <div class="exec-card" data-reveal>
+        <div class="exec-rank-stripe"></div>
+        <div class="exec-photo-wrap">
+          <img class="exec-photo" src="https://images.pexels.com/photos/29995644/pexels-photo-29995644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Einstein Kimutai">
+          <div class="exec-overlay">
+            <p class="overlay-bio">Einstein oversees inter-university coordination and member engagement. An Engineering student, he brought a systems-thinking lens to the Mentorship Nexus programme.</p>
+            <div class="overlay-socials">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="exec-body">
+          <div class="exec-name">Einstein Kimutai</div>
+          <div class="exec-role"><i class="fas fa-user-friends"></i> Vice President</div>
+          <div class="exec-dept"><i class="fas fa-university"></i> JKUAT · Engineering Year 3</div>
+        </div>
+      </div>
+
+      <!-- Secretary General -->
+      <div class="exec-card" data-reveal>
+        <div class="exec-rank-stripe"></div>
+        <div class="exec-photo-wrap">
+          <img class="exec-photo" src="https://images.pexels.com/photos/3776932/pexels-photo-3776932.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Adan Jelle">
+          <div class="exec-overlay">
+            <p class="overlay-bio">Adan manages records, correspondence, and governance documentation. His meticulous approach has improved association transparency and member communication significantly.</p>
+            <div class="overlay-socials">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="exec-body">
+          <div class="exec-name">Adan Jelle</div>
+          <div class="exec-role"><i class="fas fa-envelope"></i> Secretary General</div>
+          <div class="exec-dept"><i class="fas fa-university"></i> Kenyatta University · Year 3</div>
+        </div>
+      </div>
+
+      <!-- Treasurer -->
+      <div class="exec-card" data-reveal>
+        <div class="exec-rank-stripe"></div>
+        <div class="exec-photo-wrap">
+          <img class="exec-photo" src="https://images.pexels.com/photos/34377368/pexels-photo-34377368.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Marion Kosgei">
+          <div class="exec-overlay">
+            <p class="overlay-bio">Marion manages the association budget, fundraising initiatives, and financial reporting. Under her stewardship, WCSA secured its first corporate sponsorship.</p>
+            <div class="overlay-socials">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="exec-body">
+          <div class="exec-name">Marion Kosgei</div>
+          <div class="exec-role"><i class="fas fa-chart-line"></i> Treasurer</div>
+          <div class="exec-dept"><i class="fas fa-university"></i> Strathmore · Finance Year 3</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CABINET DIRECTORS
+════════════════════════════════════════ -->
+<section class="cabinet-section">
+  <div class="container">
+    <div class="sec-eyebrow">Cabinet</div>
+    <h2 class="sec-title">Directorate & Cabinet</h2>
+    <p class="sec-sub">Portfolio directors who lead WCSA's key programmes and departments, reporting directly to the executive board.</p>
+
+    <div class="cabinet-grid">
+
+      <div class="cabinet-card" data-reveal>
+        <div class="cabinet-photo-wrap">
+          <img class="cabinet-photo" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Farah Hassan">
+          <div class="cabinet-dept-badge">Academics</div>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-name">Farah Hassan</div>
+          <div class="cabinet-role">Director of Academics & Research</div>
+          <p class="cabinet-bio">Coordinates study groups, tutoring networks, and academic mentorship across WCSA's member universities. Launched the first WCSA inter-university study exchange in 2024.</p>
+          <div class="cabinet-tags">
+            <span class="cabinet-tag">Research</span>
+            <span class="cabinet-tag">Tutoring</span>
+            <span class="cabinet-tag">Scholarships</span>
+          </div>
+          <div class="cabinet-footer">
+            <div class="cabinet-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cabinet-uni"><i class="fas fa-university"></i> Moi University</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-card" data-reveal>
+        <div class="cabinet-photo-wrap">
+          <img class="cabinet-photo" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hodan Ali">
+          <div class="cabinet-dept-badge">Welfare</div>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-name">Hodan Ali</div>
+          <div class="cabinet-role">Director of Student Welfare</div>
+          <p class="cabinet-bio">Champions mental health awareness, financial aid navigation, and emergency support for WCSA members facing hardship. Established the WCSA Emergency Relief Fund in 2024.</p>
+          <div class="cabinet-tags">
+            <span class="cabinet-tag">Mental Health</span>
+            <span class="cabinet-tag">Relief Fund</span>
+            <span class="cabinet-tag">Counselling</span>
+          </div>
+          <div class="cabinet-footer">
+            <div class="cabinet-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cabinet-uni"><i class="fas fa-university"></i> UoN</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-card" data-reveal>
+        <div class="cabinet-photo-wrap">
+          <img class="cabinet-photo" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Abdi Nur">
+          <div class="cabinet-dept-badge">Events</div>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-name">Abdi Nur</div>
+          <div class="cabinet-role">Director of Events & Culture</div>
+          <p class="cabinet-bio">Organises WCSA's flagship events including the Annual Summit, Cultural Pride Day, and regional meetups. Managed logistics for 50+ events since the association's founding.</p>
+          <div class="cabinet-tags">
+            <span class="cabinet-tag">Summits</span>
+            <span class="cabinet-tag">Cultural Events</span>
+            <span class="cabinet-tag">Logistics</span>
+          </div>
+          <div class="cabinet-footer">
+            <div class="cabinet-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cabinet-uni"><i class="fas fa-university"></i> Strathmore</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-card" data-reveal>
+        <div class="cabinet-photo-wrap">
+          <img class="cabinet-photo" src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sumaya Wako">
+          <div class="cabinet-dept-badge">Careers</div>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-name">Sumaya Wako</div>
+          <div class="cabinet-role">Director of Careers & Industry</div>
+          <p class="cabinet-bio">Bridges WCSA members with internship opportunities, graduate roles, and career coaching. Built partnerships with 15 employers since 2023.</p>
+          <div class="cabinet-tags">
+            <span class="cabinet-tag">Internships</span>
+            <span class="cabinet-tag">Partnerships</span>
+            <span class="cabinet-tag">Coaching</span>
+          </div>
+          <div class="cabinet-footer">
+            <div class="cabinet-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cabinet-uni"><i class="fas fa-university"></i> USIU</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-card" data-reveal>
+        <div class="cabinet-photo-wrap">
+          <img class="cabinet-photo" src="https://images.pexels.com/photos/1080840/pexels-photo-1080840.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hassan Muse">
+          <div class="cabinet-dept-badge">Comms</div>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-name">Hassan Muse</div>
+          <div class="cabinet-role">Director of Communications</div>
+          <p class="cabinet-bio">Manages WCSA's digital presence, media relations, and internal communications. Grew the association's social media following by 300% in under a year.</p>
+          <div class="cabinet-tags">
+            <span class="cabinet-tag">Social Media</span>
+            <span class="cabinet-tag">Branding</span>
+            <span class="cabinet-tag">PR</span>
+          </div>
+          <div class="cabinet-footer">
+            <div class="cabinet-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cabinet-uni"><i class="fas fa-university"></i> KCA University</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet-card" data-reveal>
+        <div class="cabinet-photo-wrap">
+          <img class="cabinet-photo" src="https://images.pexels.com/photos/8413030/pexels-photo-8413030.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Asad Osman">
+          <div class="cabinet-dept-badge">Outreach</div>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-name">Asad Osman</div>
+          <div class="cabinet-role">Director of Community Outreach</div>
+          <p class="cabinet-bio">Leads WCSA's giving-back initiatives, coordinating volunteer programmes and community development projects in Wajir County and beyond.</p>
+          <div class="cabinet-tags">
+            <span class="cabinet-tag">Volunteering</span>
+            <span class="cabinet-tag">CSR</span>
+            <span class="cabinet-tag">County Projects</span>
+          </div>
+          <div class="cabinet-footer">
+            <div class="cabinet-socials">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="cabinet-uni"><i class="fas fa-university"></i> Egerton University</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     COMMITTEES
+════════════════════════════════════════ -->
+<section class="committees-section">
+  <div class="container">
+    <div class="sec-eyebrow">Committees</div>
+    <h2 class="sec-title">Standing Committees</h2>
+    <p class="sec-sub">Working groups that deliver WCSA's programmes on the ground. Open to all members — contact any director to get involved.</p>
+
+    <div class="committees-grid">
+
+      <div class="committee-card" data-reveal>
+        <div class="committee-header">
+          <div class="committee-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="committee-header-text">
+            <h3>Leadership Academy Committee</h3>
+            <p>Monthly workshops, executive seminars & simulations</p>
+          </div>
+        </div>
+        <div class="committee-members">
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Kevin Kore</div>
+              <div class="cm-role">Committee Chair</div>
+            </div>
+            <span class="cm-badge">Chair</span>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/3776932/pexels-photo-3776932.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Adan Jelle</div>
+              <div class="cm-role">Curriculum Design</div>
+            </div>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Farah Hassan</div>
+              <div class="cm-role">Speaker Liaison</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="committee-card" data-reveal>
+        <div class="committee-header">
+          <div class="committee-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="committee-header-text">
+            <h3>Mentorship Nexus Committee</h3>
+            <p>1-on-1 alumni pairings, career coaching & support</p>
+          </div>
+        </div>
+        <div class="committee-members">
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/29995644/pexels-photo-29995644.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Einstein Kimutai</div>
+              <div class="cm-role">Committee Chair</div>
+            </div>
+            <span class="cm-badge">Chair</span>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Hodan Ali</div>
+              <div class="cm-role">Mentee Welfare</div>
+            </div>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Sumaya Wako</div>
+              <div class="cm-role">Alumni Outreach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="committee-card" data-reveal>
+        <div class="committee-header">
+          <div class="committee-icon"><i class="fas fa-calendar-check"></i></div>
+          <div class="committee-header-text">
+            <h3>Events & Cultural Committee</h3>
+            <p>Summit, Cultural Pride Day & regional meetups</p>
+          </div>
+        </div>
+        <div class="committee-members">
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Abdi Nur</div>
+              <div class="cm-role">Committee Chair</div>
+            </div>
+            <span class="cm-badge">Chair</span>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/34377368/pexels-photo-34377368.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Marion Kosgei</div>
+              <div class="cm-role">Events Budget</div>
+            </div>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/1080840/pexels-photo-1080840.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Hassan Muse</div>
+              <div class="cm-role">Event Promotion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="committee-card" data-reveal>
+        <div class="committee-header">
+          <div class="committee-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="committee-header-text">
+            <h3>Careers & Finance Committee</h3>
+            <p>Employer partnerships, internships & bursary applications</p>
+          </div>
+        </div>
+        <div class="committee-members">
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Sumaya Wako</div>
+              <div class="cm-role">Committee Chair</div>
+            </div>
+            <span class="cm-badge">Chair</span>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/34377368/pexels-photo-34377368.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Marion Kosgei</div>
+              <div class="cm-role">Financial Oversight</div>
+            </div>
+          </div>
+          <div class="committee-member">
+            <img class="cm-avatar" src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=80" alt="">
+            <div class="cm-info">
+              <div class="cm-name">Farah Hassan</div>
+              <div class="cm-role">Scholarship Desk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ALUMNI SPOTLIGHT
+════════════════════════════════════════ -->
+<section class="alumni-section">
+  <div class="container">
+    <div class="sec-eyebrow">Alumni</div>
+    <h2 class="sec-title">Former Leaders, Lifelong Champions</h2>
+    <p class="sec-sub">WCSA alumni carry their leadership forward into every sector of Kenyan society — here's where they are now.</p>
+
+    <div class="alumni-grid">
+      <div class="alumni-card" data-reveal>
+        <div class="alumni-avatar-wrap">
+          <img class="alumni-avatar" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Ahmed Warsame">
+          <div class="alumni-verified"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="alumni-name">Ahmed Warsame</div>
+        <div class="alumni-cohort">Founding President · 2023</div>
+        <div class="alumni-current"><i class="fas fa-briefcase"></i> Policy Analyst — Government of Kenya</div>
+        <blockquote class="alumni-quote">WCSA taught me that community organising is the highest form of leadership. What we started will outlast all of us.</blockquote>
+        <div class="alumni-tags">
+          <span class="alumni-tag">Public Policy</span>
+          <span class="alumni-tag">Governance</span>
+        </div>
+      </div>
+      <div class="alumni-card" data-reveal>
+        <div class="alumni-avatar-wrap">
+          <img class="alumni-avatar" src="https://images.pexels.com/photos/3776932/pexels-photo-3776932.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Ifrah Osman">
+          <div class="alumni-verified"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="alumni-name">Ifrah Osman</div>
+        <div class="alumni-cohort">Former Secretary · 2023</div>
+        <div class="alumni-current"><i class="fas fa-briefcase"></i> Associate — Bowmans Law Kenya</div>
+        <blockquote class="alumni-quote">The communication and organisational skills I built as Secretary helped me land my first role out of campus. WCSA is a real career accelerator.</blockquote>
+        <div class="alumni-tags">
+          <span class="alumni-tag">Corporate Law</span>
+          <span class="alumni-tag">Advocacy</span>
+        </div>
+      </div>
+      <div class="alumni-card" data-reveal>
+        <div class="alumni-avatar-wrap">
+          <img class="alumni-avatar" src="https://images.pexels.com/photos/4427600/pexels-photo-4427600.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Yahye Gedi">
+          <div class="alumni-verified"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="alumni-name">Yahye Gedi</div>
+        <div class="alumni-cohort">Former VP · 2023</div>
+        <div class="alumni-current"><i class="fas fa-briefcase"></i> Software Engineer — Safaricom PLC</div>
+        <blockquote class="alumni-quote">Wajir students are among the most resilient people in Kenya. WCSA gives that resilience a platform. I'm honoured to have been part of it.</blockquote>
+        <div class="alumni-tags">
+          <span class="alumni-tag">Technology</span>
+          <span class="alumni-tag">Innovation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     GOVERNANCE INFO
+════════════════════════════════════════ -->
+<section class="governance-section">
+  <div class="container">
+    <div class="gov-heading">
+      <h2>How We Govern Ourselves</h2>
+      <p>WCSA operates on three democratic principles — every position is elected, every decision is transparent, and every member has a voice.</p>
+    </div>
+    <div class="governance-inner">
+      <div class="gov-item">
+        <i class="fas fa-vote-yea"></i>
+        <h3>Democratic Elections</h3>
+        <p>All executive and directorate positions are filled through a free and fair election held every two years. Any WCSA member in good standing is eligible to run for office.</p>
+      </div>
+      <div class="gov-item">
+        <i class="fas fa-file-alt"></i>
+        <h3>Published Constitution</h3>
+        <p>Our governance is guided by a written constitution adopted by the founding members in 2023. It is reviewed and updated at each Annual General Meeting.</p>
+      </div>
+      <div class="gov-item">
+        <i class="fas fa-users"></i>
+        <h3>Annual General Meeting</h3>
+        <p>The AGM is the highest decision-making body in WCSA. All members are invited to attend, vote on resolutions, and hold leadership to account each year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     JOIN CTA
+════════════════════════════════════════ -->
+<section class="join-section">
+  <div class="container">
+    <div class="join-inner">
+      <div class="join-text">
+        <h2>Interested in Leading WCSA?</h2>
+        <p>The next election cycle opens in 2025. Any WCSA member in good standing can run for any position. Learn about the requirements and start your journey in leadership.</p>
+      </div>
+      <div class="join-actions">
+        <a href="#" class="join-btn-primary"><i class="fas fa-user-plus"></i> Join WCSA First</a>
+        <a href="#" class="join-btn-sec"><i class="fas fa-file-alt"></i> Read the Constitution</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-badge">W</div>
+        <p>Empowering the next generation of leaders from Wajir County. United by heritage, driven by excellence.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About WCSA</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Leadership</h4>
+        <ul>
+          <li><a href="#">Executive Board</a></li>
+          <li><a href="#">Cabinet Directors</a></li>
+          <li><a href="#">Committees</a></li>
+          <li><a href="#">Alumni Network</a></li>
+          <li><a href="#">WCSA Constitution</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Join WCSA</a></li>
+          <li><a href="#">Run for Office</a></li>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Wajir County Students Association. All rights reserved.</span>
+      <span>Made with <span style="color:var(--amber)">♥</span> for Wajir students across Kenya</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  // Theme toggle
+  const themeBtn = document.getElementById('themeBtn');
+  const themeIcon = document.getElementById('themeIcon');
+  let dark = false;
+  themeBtn.addEventListener('click', () => {
+    dark = !dark;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : '');
+    themeIcon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+  });
+
+  // Mobile drawer
+  const ham = document.getElementById('hamburger');
+  const drawer = document.getElementById('drawer');
+  const overlay = document.getElementById('overlay');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    drawer.classList.toggle('open');
+    overlay.classList.toggle('open');
+  });
+  overlay.addEventListener('click', () => {
+    ham.classList.remove('open');
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+  });
+
+  // Scroll-to-top
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Scroll-reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(28px)';
+    el.style.transition = `opacity .5s ease ${(i % 4) * 80}ms, transform .5s ease ${(i % 4) * 80}ms`;
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
