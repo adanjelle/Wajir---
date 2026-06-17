@@ -16,19 +16,51 @@
       --shadow-card: 0 16px 40px rgba(23,18,12,0.08);
       --shadow-hover: 0 28px 55px rgba(23,18,12,0.14);
     }
-    [data-theme="dark"] {
-      --sand:     #110E09;
-      --ink:      #F5EDE2;
-      --slate:    #C9BDB4;
-      --muted:    #8C7D73;
-      --border:   rgba(224,123,39,0.25);
-      --card-bg:  #1E1812;
-      --section-alt: #17120C;
-      --white:    #1E1812;
-      --shadow-card: 0 16px 40px rgba(0,0,0,0.3);
-      --shadow-hover: 0 28px 55px rgba(0,0,0,0.45);
-    }
-
+body.dark-mode {
+  --sand:        #000000;
+  --ink:         #F5EDE2;
+  --slate:       #C9BDB4;
+  --muted:       #8C7D73;
+  --border:      rgba(224,123,39,0.25);
+  --card-bg:     #0a0a0a;
+  --section-alt: #0f0f0f;
+  --white:       #0a0a0a;
+  --shadow-card: 0 16px 40px rgba(0,0,0,0.6);
+  --shadow-hover:0 28px 55px rgba(0,0,0,0.8);
+  background: #000000;
+  color: #F5EDE2;
+}
+body.dark-mode .hero {
+  background: linear-gradient(160deg, #000000 55%, #0d0906 100%);
+}
+body.dark-mode .trust-bar,
+body.dark-mode .navbar {
+  background: #000000;
+}
+body.dark-mode .leader-card,
+body.dark-mode .program-card,
+body.dark-mode .testi-card,
+body.dark-mode .mv-card,
+body.dark-mode .event-card,
+body.dark-mode .values-wrap,
+body.dark-mode .hero-float-card {
+  background: #0a0a0a;
+  border-color: rgba(224,123,39,0.2);
+}
+body.dark-mode .testi-card,
+body.dark-mode .leader-card,
+body.dark-mode .val-chip {
+  background: #111111;
+}
+body.dark-mode .footer {
+  background: #000000;
+}
+body.dark-mode .join-inner {
+  background: linear-gradient(135deg, #000000 0%, #0a0600 100%);
+}
+body.dark-mode .mobile-drawer {
+  background: #0a0a0a;
+}
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
     html { scroll-behavior: smooth; }
