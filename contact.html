@@ -340,11 +340,60 @@
   </div>
 </div>
 
-<!-- FOOTER -->
-<footer>
-  <strong>WCSA</strong> — Wajir College &amp; Students Association &nbsp;·&nbsp; Est. 2023<br>
-  <a href="#">Home</a> &nbsp;·&nbsp; <a href="#">About</a> &nbsp;·&nbsp; <a href="#">Events</a> &nbsp;·&nbsp; <a href="#">Gallery</a> &nbsp;·&nbsp; <a href="#">Contact</a><br><br>
-  &copy; 2025 WCSA. All rights reserved.
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-badge">W</div>
+        <br>
+        <p>Empowering the next generation of leaders from Wajir County. United by heritage, driven by excellence — building a brighter future together.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About WCSA</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#">Leadership Academy</a></li>
+          <li><a href="#">Mentorship Nexus</a></li>
+          <li><a href="#">Annual Summit</a></li>
+          <li><a href="#">Career Expo</a></li>
+          <li><a href="#">Cultural Pride Day</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Join WCSA</a></li>
+          <li><a href="#">Alumni Network</a></li>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Wajir County Students Association. All rights reserved.</span>
+      <span>Made with <span style="color:var(--amber)">♥</span> for Wajir students across Kenya</span>
+    </div>
+  </div>
 </footer>
 
 <!-- EmailJS library (must load BEFORE the script below) -->
@@ -403,15 +452,8 @@ async function doSend() {
     from_email: em,
     phone: wa || 'Not provided',
     institution: inst || 'Not provided',
-    message: msg,
-    to_email: em,   // used by the auto-reply template
-    email: em,
-    user_email: em,
-    reply_to: em,
-    name: fn + (ln ? ' ' + ln : ''),
-    submitted_at: new Date().toLocaleString('en-KE', { dateStyle: 'medium', timeStyle: 'short' })
-  };
-
+    message: msg
+};
   try {
     // 1) Send the message to the WCSA team
     await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params);
