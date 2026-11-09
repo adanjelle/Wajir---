@@ -13,7 +13,11 @@
 <nav class="navbar">
   <div class="container nav-container">
     <div class="logo"><h2>WC<span>SA</span></h2><p>WCSA | Est. 2023</p></div>
-    <div class="menu-icon" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
+<button class="menu-icon" id="mobileMenuBtn"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+    <i class="fas fa-bars"></i>
+</button>
     <ul class="nav-links" id="navLinks">
       <li><a href="home.html" class="nav-link-item active">Home</a></li>
       <li><a href="about.html" class="nav-link-item">About</a></li>
@@ -558,30 +562,28 @@
   });
 
   /* MOBILE MENU */
-  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-  const mobileDrawer  = document.getElementById('mobileDrawer');
-  const mobileOverlay = document.getElementById('mobileOverlay');
-  const menuIcon      = mobileMenuBtn.querySelector('i');
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+const menuIcon = mobileMenuBtn.querySelector('i');
 
-  function openDrawer()  {
-    mobileDrawer.classList.add('open');
-    mobileOverlay.classList.add('open');
-    menuIcon.className = 'fas fa-times';
-  }
-  function closeDrawer() {
-    mobileDrawer.classList.remove('open');
-    mobileOverlay.classList.remove('open');
-    menuIcon.className = 'fas fa-bars';
-  }
+mobileMenuBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
 
-  mobileMenuBtn.addEventListener('click', () => {
-    mobileDrawer.classList.contains('open') ? closeDrawer() : openDrawer();
-  });
-  mobileOverlay.addEventListener('click', closeDrawer);
-  mobileDrawer.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeDrawer);
-  });
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen);
 
+    menuIcon.className = isOpen
+        ? 'fas fa-times'
+        : 'fas fa-bars';
+});
+
+// Close menu when a navigation link is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        menuIcon.className = 'fas fa-bars';
+    });
+});
   /* VALUES CAROUSEL */
   const valSlides = document.getElementById('valSlides');
   const chips     = Array.from(valSlides.querySelectorAll('.val-chip'));
